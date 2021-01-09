@@ -3,3 +3,4 @@ target/
 # src/main/resources/configuration.conf
 # src/main/webapp
 *.DS_Store
+src/main/java/onlineShop/ApplicationConfig.java
