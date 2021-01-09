@@ -29,6 +29,10 @@ public class Customer implements Serializable{
     @JoinColumn(unique = true)
     private User user;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(unique = true)
+    private Cart cart;
+
     public int getId() {
         return id;
     }
@@ -83,5 +87,13 @@ public class Customer implements Serializable{
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
     }
 }
