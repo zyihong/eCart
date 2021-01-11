@@ -12,7 +12,7 @@ public class User implements Serializable {
     @Id
     private String emailId;
 
-    private String passward;
+    private String password;
     private boolean enabled;
 
     @OneToOne(mappedBy = "user")
@@ -26,12 +26,12 @@ public class User implements Serializable {
         this.emailId = emailId;
     }
 
-    public String getPassward() {
-        return passward;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassward(String passward) {
-        this.passward = passward;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public boolean isEnabled() {
